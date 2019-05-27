@@ -1,0 +1,1 @@
+using foward propagation neural network to predict hand written digits with trained weights

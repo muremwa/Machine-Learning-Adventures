@@ -1,0 +1,3 @@
+predict female unemployment rate given the male unemplyment
+x = male rate
+y = female rate

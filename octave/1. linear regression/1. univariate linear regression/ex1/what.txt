@@ -1,0 +1,3 @@
+this is practice for linear regression with one variable
+x = size in feet squared
+y = house price
