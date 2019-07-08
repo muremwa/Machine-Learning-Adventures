@@ -1,10 +1,10 @@
 function [J, hypo] = costFunction(X, y, theta);
   m = length(y);
   z = X*theta;
-  hy = sigmoid(z);
+  hy = sigmoid(z)
   
   % p1
-  p1 = y.*log(hy);
+  p1 = y.*log(hy)
   % p2
   p2 = (1-y).*log(1-hy);
   
