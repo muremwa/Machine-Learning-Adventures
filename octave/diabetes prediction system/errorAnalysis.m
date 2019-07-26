@@ -1,5 +1,5 @@
 %% errorAnalysis: function description
-function [J, acc] = errorAnalysis(theta, mu, si)
+function [J, acc] = errorAnalysis(theta, mu, si, thresh)
 	% load data
 	% load the cross validation set
 	data = load('cv.txt');
@@ -14,7 +14,7 @@ function [J, acc] = errorAnalysis(theta, mu, si)
 
 	% predict
 	h = hypothesis(Xcv, theta);
-	s = h>=0.5;
+	s = h>=thresh;
 	acc = mean(ycv==s)*100;
 
 	J = cost(h, ycv);

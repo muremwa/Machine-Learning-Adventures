@@ -32,7 +32,7 @@ for i=1:length(cut)
 	train_error(:,i) = cost(hy, y);
 
 	% cross validation error
-	[cv_error(:,i), ~] = errorAnalysis(theta, mu, si);
+	[cv_error(:,i), ~] = errorAnalysis(theta, mu, si, 0.5);
 
 	printf(".");
 end
